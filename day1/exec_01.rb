@@ -1,7 +1,7 @@
 require 'byebug'
 
 def read_input
-  file = File.open('input.txt')
+  file = File.open(input, 'r')
   input = file.readlines.map(&:chomp).map(&:to_i)
   file.close
   input
